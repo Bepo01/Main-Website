@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ABOUT ME</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="Background/css/style.css">
+</head>
+<body>
+
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles"></span>
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="Background/particles.js"></script>
+<script src="Background/js/app.js"></script>
+
+<!-- stats.js -->
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+<div class="profile-pic" >
+  <img src="Me.jpg" alt="Profile Picture">
+</div>
+
+<div class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">
+        <img src="logo.png"  alt="logo">
+    </div>
+
+    <div class="nav-buttons">
+      <button id="button1" class="button1" onclick="window.location.href='index.html'">Home</button>
+        <button id="button2" class="button2" onclick="window.location.href='index.html'">About</button>
+        <button id="button3" class="button3" onclick="showPopup('popup3')">Contact</button>
+    </div>
+  </div>
+  <div id="popup1" class="popup">
+        <div class="popup-header" onmousedown="dragPopup(event, 'popup1')">
+            <span>About Me</span>
+            
+            <button class="close-btn" onclick="closePopup('popup1')">✖</button>
+
+        </div>
+        <div class="popup-content">Hii !</div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-header" onmousedown="dragPopup(event, 'popup2')">
+            <span>Contact</span>
+            <button class="close-btn" onclick="closePopup('popup2')">✖</button>
+        </div>
+        <div class="popup-content">I am Bep0</div>
+    </div>
+
+
+<script src="Background/js/script.js"></script>  
+</body>
+</html>

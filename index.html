@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+
+    <div class="nav-buttons">
+      <button id="button1" class="button1" onclick="showPopup('popup1')">Home</button>
+        <button id="button2" class="button2" onclick="window.location.href='About.html.html'">About</button>
+        <button id="button3" class="button3" onclick="showPopup('popup3')">Contact</button>
+    </div>
+  </div>
+  
+<div id="popup1" class="popup">
+        <div class="popup-header" onmousedown="dragPopup(event, 'popup1')">
+            <span>Home</span>
+            
+            <button class="close-btn" onclick="closePopup('popup1')">✖</button>
+
+        </div>
+        <div class="popup-content">......................</div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-header" onmousedown="dragPopup(event, 'popup2')">
+            <span>About</span>
+            <button class="close-btn" onclick="closePopup('popup2')">✖</button>
+        </div>
+        <div class="popup-content">...............</div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-header" onmousedown="dragPopup(event, 'popup3')">
+            <span>Contact</span>
+            <button class="close-btn" onclick="closePopup('popup3')">✖</button>
+        </div>
+        <div class="popup-content">..............</div>
+    </div>
+
+</body>
+</html>
