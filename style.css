@@ -5,7 +5,11 @@ body {
   font-family: sans-serif;
   background-image: url(2.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* ensures full viewport height */
 }
+
 
 .navbar {
   display: flex;
@@ -116,3 +120,4 @@ body {
 .popup-content {
     padding: 30px;
 }
+
