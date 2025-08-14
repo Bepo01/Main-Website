@@ -118,6 +118,7 @@ body {
 
 
 .welcome {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,4 +242,5 @@ body {
  .aboutme:hover{
   transform: translateY(-55%) scale(1.1);
  }
+
 
