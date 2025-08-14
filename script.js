@@ -44,3 +44,8 @@ function dragPopup(event, popupId) {
     document.addEventListener("mousemove", movePopup);
     document.addEventListener("mouseup", stopDragging);
 }
+
+
+function gotoabout() {
+  window.location.href = 'About.html'; 
+}

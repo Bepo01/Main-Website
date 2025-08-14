@@ -38,6 +38,16 @@ canvas{
   
 }
 
+body {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease-out;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
 
 /* ---- stats.js ---- */
 
@@ -229,8 +239,8 @@ body {
   top: 45%;
   right: 80px; /* adjust as needed */
   transform: translateY(-50%); /* centers vertically */
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.644),
