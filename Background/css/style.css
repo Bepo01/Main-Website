@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Mozilla+Headline:wght@200..700&family=Poiret+One&family=Rubik+Distressed&display=swap');
+
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -178,25 +180,39 @@ body {
   height: auto;
 }
 
-.nav-buttons button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  color: white;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-weight: 500;
-  position: relative;
-   font-family: 'Poppins', sans-serif;
+.bout {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; 
 }
 
-.nav-buttons button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-  font-family: 'Poppins', sans-serif; /* Keep it consistent */
-  font-weight: 500; /* No jumpiness */
+
+
+
+.bout p {
+  font-family: "RubiK Distressed", sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #aaaaaaa6, #ffffff, #bbbbbb3a);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.005);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: waterFlow 20s linear infinite;
+}
+
+@keyframes waterFlow {
+  to {
+    background-position: -200% center;
+  }
 }
 
 
