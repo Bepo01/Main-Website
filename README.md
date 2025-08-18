@@ -1,0 +1,3 @@
+Welcome to my peronal website !
+
+I built this by myself with the help of AI assistance...
