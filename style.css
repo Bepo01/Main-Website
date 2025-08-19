@@ -255,7 +255,7 @@ body {
 .yesbtn{
   position: fixed;
   display: flex;
-  top: 450px;
+  top: 446px;
   left: 50%;
   gap: 15px;
   transform: translateX(-50%);
@@ -290,7 +290,7 @@ body {
 .reach{
   position: fixed;
   display: flex;
-  top: 450px;
+  top: 446px;
   left: 85%;
   gap: 15px;
   transform: translateX(-50%);
@@ -322,3 +322,4 @@ body {
   box-shadow: 0 12px 24px rgba(255, 255, 255, 0.25),
               0 0 20px rgba(255, 255, 255, 0.2);
 }
+
