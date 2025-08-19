@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Delius&family=Mozilla+Headline:wght@200..700&family=Poiret+One&family=Rubik+Distressed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Mozilla+Headline:wght@200..700&family=Poiret+One&family=Rubik+Distressed&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body {
   margin: 0;
   font-family: sans-serif;
@@ -8,7 +7,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* ensures full viewport height */
+  height: 100vh;
 }
 
 .fade-out {
@@ -22,7 +21,6 @@ body {
   }
 }
 
-/* Optional: fade in when new page loads */
 body {
   opacity: 0;
   animation: fadeIn 0.5s forwards ease-out;
@@ -33,7 +31,6 @@ body {
     opacity: 1;
   }
 }
-
 
 .navbar {
   display: flex;
@@ -52,7 +49,6 @@ body {
 }
 
 .navbar {
-  /* existing styles... */
   animation: navbarEntrance 0.8s ease forwards;
   opacity: 0;
   transform: translateY(-20px);
@@ -64,7 +60,6 @@ body {
     transform: translateY(0);
   }
 }
-
 
 .logo {
   display: flex;
@@ -89,7 +84,6 @@ body {
   width: 50px;
   height: auto;
 }
-
 
 .welcome {
   position: fixed; 
@@ -123,7 +117,6 @@ body {
   }
 }
 
-
 .text{
   position: fixed;
   size-adjust: auto;
@@ -150,11 +143,9 @@ body {
   animation: fadeIn 1s ease forwards;
   font-family: Delius;
   color: #f0f0f0bd;
-  text-shadow:
-    1px 1px 2px rgba(0, 0, 0, 0.6),   /* dark shadow */
-   -1px -1px 2px rgba(255, 255, 255, 0.2); /* light edge */
-   cursor: pointer;
-   
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6),   /* dark shadow */
+              -1px -1px 2px rgba(255, 255, 255, 0.2); /* light edge */
+  cursor: default;
 }
 
 .text:hover{
@@ -164,7 +155,6 @@ body {
 @keyframes fadeIn {
   to { opacity: 1; }
 }
-
 
 .wanna{
   position: fixed;
@@ -195,8 +185,7 @@ body {
   text-shadow:
     1px 1px 2px rgba(0, 0, 0, 0.6),   /* dark shadow */
    -1px -1px 2px rgba(255, 255, 255, 0.2); /* light edge */
-   cursor: pointer;
-   
+   cursor: default;
 }
 
 .wanna:hover{
@@ -206,8 +195,6 @@ body {
 @keyframes fadeIn {
   to { opacity: 1; }
 }
-
-
 
 .popup {
     display: none;
@@ -244,10 +231,10 @@ body {
 }
 
 .aboutme {
-  position: fixed; /* stays in place even when scrolling */
+  position: fixed;
   top: 45%;
-  right: 80px; /* adjust as needed */
-  transform: translateY(-50%); /* centers vertically */
+  right: 80px;
+  transform: translateY(-50%);
   width: 260px;
   height: 260px;
   border-radius: 50%;
@@ -259,7 +246,79 @@ body {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
  .aboutme:hover{
   transform: translateY(-55%) scale(1.1);
  }
 
+
+.yesbtn{
+  position: fixed;
+  display: flex;
+  top: 450px;
+  left: 50%;
+  gap: 15px;
+  transform: translateX(-50%);
+}
+.yesbtn button {
+  width: 70px;
+  height: 35px;
+  padding: 0 5px 5px 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Sansation;
+  font-weight: bold;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: #f0f0f0bd;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.6),
+   -1px -1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15),
+              0 0 15px rgba(255, 255, 255, 0.123);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.yesbtn button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.25),
+              0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.reach{
+  position: fixed;
+  display: flex;
+  top: 450px;
+  left: 85%;
+  gap: 15px;
+  transform: translateX(-50%);
+}
+
+.reach button{
+  width: auto;
+  height: auto;
+  padding: 5px 9px 9px 9px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Sansation;
+  font-weight: bold;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: #f0f0f0bd;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.6),
+   -1px -1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15),
+              0 0 15px rgba(255, 255, 255, 0.123);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.reach button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.25),
+              0 0 20px rgba(255, 255, 255, 0.2);
+}
